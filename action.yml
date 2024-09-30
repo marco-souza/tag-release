@@ -1,0 +1,25 @@
+name: 'Tag Release'
+description: 'Create a github release whenever a new git tag gets created'
+
+inputs:
+  token:
+    description: 'Github token'
+    required: true
+  release_name:
+    description: 'Release name'
+    required: false
+  release_body:
+    description: 'Release body'
+    required: false
+
+outputs:
+  status:
+    description: 'Status of the action (success/failure)'
+  tag:
+    description: 'Tag name'
+  url:
+    description: 'URL of the created release'
+
+runs:
+  using: 'node20'
+  main: 'index.js'
