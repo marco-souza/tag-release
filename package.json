@@ -2,6 +2,10 @@
   "name": "tag-release",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "build": "bun build --target=node --outfile=index.js --minify ./index.ts",
+    "test": "act push"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
