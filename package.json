@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "bun build --target=node --outfile=index.js --minify ./index.ts",
-    "test": "act push"
+    "test": "act push -s GITHUB_TOKEN=$(gh auth token)"
   },
   "devDependencies": {
     "@types/bun": "latest"
