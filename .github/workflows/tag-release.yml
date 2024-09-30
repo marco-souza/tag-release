@@ -2,8 +2,8 @@ name: Release Tag validator
 
 on:
   push:
-    # paths:
-    #   - package.json
+    paths:
+      - package.json
 
 jobs:
   gh-release:
