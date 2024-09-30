@@ -5,12 +5,9 @@ inputs:
   token:
     description: 'Github token'
     required: true
-  release_name:
-    description: 'Release name'
-    required: false
-  release_body:
-    description: 'Release body'
-    required: false
+  version-file:
+    description: 'File containing the version number'
+    required: true
 
 outputs:
   status:

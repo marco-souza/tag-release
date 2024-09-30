@@ -1,4 +1,5 @@
 {
+  "version": "0.0.1",
   "name": "tag-release",
   "module": "index.ts",
   "type": "module",

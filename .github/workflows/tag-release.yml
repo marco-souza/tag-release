@@ -16,4 +16,5 @@ jobs:
       - name: Create release from tag
         uses: ./
         with:
+          version-file: package.json
           token: ${{ secrets.GITHUB_TOKEN }}
