@@ -15,5 +15,6 @@ jobs:
         # uses: marco-souza/tag-release@0.0.1
         uses: ./
         with:
+          title: 🚀 Release
           version-file: package.json
           token: ${{ secrets.GITHUB_TOKEN }}
