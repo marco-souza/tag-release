@@ -1,22 +1,25 @@
-name: 'Tag Release'
-description: 'Create a github release whenever a new git tag gets created'
+name: "Tag Release"
+description: "Create a github release whenever a new git tag gets created"
 
 inputs:
   token:
-    description: 'Github token'
+    description: "Github token"
     required: true
   version-file:
-    description: 'File containing the version number'
+    description: "File containing the version number"
     required: true
+  title:
+    description: "Title of the release"
+    required: false
 
 outputs:
   status:
-    description: 'Status of the action (success/failure)'
+    description: "Status of the action (success/failure)"
   tag:
-    description: 'Tag name'
+    description: "Tag name"
   url:
-    description: 'URL of the created release'
+    description: "URL of the created release"
 
 runs:
-  using: 'node20'
-  main: 'index.js'
+  using: "node20"
+  main: "index.js"
