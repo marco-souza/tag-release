@@ -37,8 +37,7 @@ async function main() {
 
   console.log("Creating a new release for tag", releaseTag);
   const createReleaseRes = await createRelease(
-    { title, tag: releaseTag },
-    octokit,
+    { octokit, title, tag: releaseTag }, 
   );
 
   core.setOutput("status", "created");
@@ -98,12 +97,14 @@ async function createTag(
 type CreateRelease = {
   tag: string;
   title?: string;
+  octokit: ReturnType<typeof github.getOctokit>;
 };
 
 async function createRelease({
   tag,
   title,
-}: CreateRelease, octokit: ReturnType<typeof github.getOctokit>) {
+  octokit,
+}: CreateRelease) {
   const name = title ? `${title} ${tag}` : tag;
   const resp = await octokit.request("POST /repos/{owner}/{repo}/releases", {
     name,
