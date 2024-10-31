@@ -12,7 +12,8 @@ To run:
 bun run index.ts
 ```
 
-This project was created using `bun init` in bun v1.1.28. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+This project was created using `bun init` in bun v1.1.28. [Bun](https://bun.sh)
+is a fast all-in-one JavaScript runtime.
 
 ## Usage
 
@@ -63,4 +64,3 @@ jobs:
           version-file: deno.json
           token: ${{ secrets.GITHUB_TOKEN }}
 ```
-
