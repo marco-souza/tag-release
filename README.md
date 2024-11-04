@@ -1,19 +1,14 @@
 # tag-release
 
-To install dependencies:
+![GitHub Release](https://img.shields.io/github/v/release/marco-souza/tag-release)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/marco-souza/tag-release/tag-release.yml)
 
-```bash
-bun install
-```
+**Tag Release** is a GitHub Action that creates **GitHub Releases** whenever your version file changes.
 
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.28. [Bun](https://bun.sh)
-is a fast all-in-one JavaScript runtime.
+> [!NOTE]
+> We only support `json` files with a `version` key on the root level, because it was initially created to support `package.json` and `deno.json`.
+>
+> You can also create a `version.json`, at the root level of your project, if you are not developing a JavaScript package.
 
 ## Usage
 
