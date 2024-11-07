@@ -1,5 +1,7 @@
 name: "Tag Release"
 description: "Create a github release whenever a new git tag gets created"
+icon: tag
+
 
 inputs:
   token:
