@@ -1,7 +1,10 @@
 name: "GitHub Tag Releaser"
 description: "Create a github release whenever a new git tag gets created"
-icon: tag
-color: blue
+author: Marco Souza
+
+branding:
+  color: blue
+  icon: tag
 
 inputs:
   token:
