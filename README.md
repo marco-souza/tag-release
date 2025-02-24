@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Create release from tag
-        uses: marco-souza/tag-release@0.0.1
+        uses: marco-souza/tag-release@1.2.0
         with:
           version-file: package.json
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -54,7 +54,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Create release from tag
-        uses: marco-souza/tag-release@0.0.1
+        uses: marco-souza/tag-release@1.2.0
         with:
           version-file: deno.json
           token: ${{ secrets.GITHUB_TOKEN }}
